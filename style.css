@@ -1,5 +1,7 @@
+/* Импорт шрифтов */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Настройка */
 
@@ -10,6 +12,28 @@
 body {
 	height: 100vh;
 	background-color: #e0e0e0;
+}
+
+h1, h2, h3 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+h1 {
+	position: relative;
+	text-align: center;
+	font-size: 7vh;
+}
+
+a::selection {
+	background-color: white;
+	color: black;
+}
+
+p::selection, h1::selection, h2::selection {
+	background-color: black;
+	color: white;
 }
 
 /* Шапка */
@@ -105,17 +129,14 @@ header {
 	background-size: cover;
 }
 
-.main_container {
-
-}
-
 .main p {
+	position: relative;
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-style: italic;
 	font-size: 3vh;
 	color: white;
-	position: relative;
+	line-height: 180%;
 }
 
 #sign {
@@ -126,16 +147,255 @@ header {
 
 /* БИОГРАФИЯ */
 
-h1 {
+.block_1b {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 10%;
 	position: relative;
-	text-align: center;
-	top: 5%;
+}
+
+.block_1b_1 {
+	display: inline-flex;
+	position: relative;
+	margin-top: 5%;
+	gap: 5%;
+}
+
+.block_1b_1 img {
+	margin-left: 10%;
+	width: 30%;
+	height: 20%;
+}
+
+.block_1b_1 p {
+	margin-top: 1.5%;
+	font-family: "Noto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2.5vh;
+	line-height: 160%;
+}
+
+.block_2b {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	top: 18%;
+	height: auto;
+	width: 100%;
+}
+
+.block_2b p {
+	margin-top: 1.8%;
+	margin-left: 8%;
+	margin-right: 8%;
+	font-family: "Noto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2.5vh;
+	line-height: 160%;
+}
+
+.block_2b img {
+	margin-right: 8%;
+	width: 32%;
+	height: 80%;
+}
+
+.block_2b_1 {
+	display: inline-flex;
+}
+
+.block_2b_2 {
+	display: inline-flex;
+}
+
+.block_2b_2 img {
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 0;
+	width: 30%;
+	height: 60%;
+}
+
+.heading2 {
+	margin-top: 4%;
+	margin-left: 15%;
+	font-size: 4vh;
+}
+
+.block_2b_3 {
+	display: inline-flex;
+}
+
+.block_2b_3 img {
+	width: 30%;
+	margin-top: .5%;
+}
+
+.block_2b_4 {
+	display: inline-flex;
+}
+
+.block_2b_4 img {
+	margin-left: 10%;
+	margin-top: 2.5%;
+}
+
+.block_2b_5 {
+	display: inline-flex;
+}
+
+.block_2b_5 img {
+	margin-top: 2%;
+}
+
+.block_2b_6 {
+	display: inline-flex;
+}
+
+.block_2b_6 img {
+	margin-top: 2%;
+	margin-left: 10%;
+}
+
+
+/* ТВОРЧЕСТВО */
+
+.block_1a {
+	position: relative;
+	width: 100%;
+	height: auto;
+	top: 10%;
+}
+
+.block_1a p {
+	margin-top: 1.8%;
+	margin-left: 8%;
+	margin-right: 8%;
+	font-family: "Noto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2.5vh;
+	line-height: 160%;
+}
+
+.block_1a_1 {
+	display: inline-flex;
+}
+
+.block_1a_1 img {
+	margin-top: 3%;
+	margin-left: 10%;
+	width: 20%;
+}
+
+.block_1a_2 {
+	display: inline-flex;
+}
+
+.block_1a_2 img {
+	margin-top: 5%;
+	margin-right: 10%;
+	width: 30%;
+	height: 20%;
+}
+
+.block_1a_3 {
+	display: inline-flex;
+}
+
+.block_1a_3 img {
+	margin-left: 10%;
+	margin-top: 3%;
+}
+
+/* ПРОИЗВЕДЕНИЯ */
+
+.block_1w {
+	margin-top: 3%;
+}
+
+.list {
+	margin-top: 3%;
+	margin-left: 10%;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.list a {
+	width: auto;
+	margin-top: 1%;
+	text-decoration: none;
+	font-family: "Nota", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: black;
+}
+
+.list a:hover {
+	color: #545454;
+}
+
+.list a:active {
+	color: white;
+}
+
+/* Подвал */
+
+.footer {
+	display: flex;
+	position: relative;
+	top: 24%;
+	width: 100%;
+	height: 8vh;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+
+.footer a {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 7vh;
+	font-size: 2.5vh;
+	color: white;
 }
 
-.block_1b {
-	text-align: center;
+.footer a::before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	height: 2px;
+	width: 100%;
+	background-color: white;
+	border-radius: 15px;
+	transform: scaleX(0);
+	transition: transform .15s linear;
+}
+
+.footer a:hover {
+	color: white;
+}
+
+.footer a:hover::before {
+	transform: scaleX(1);
+}
+
+.footer a:visited {
+	color: white;
+}
+
+.footer a:active {
+	color: #545454;
+	transition: color .1s linear;
+}
+
+.footer a:active::before {
+	background-color: #545454;
 }
