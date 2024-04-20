@@ -64,6 +64,21 @@ header {
 	font-size: 5vh;
 }
 
+.logo p::selection {
+	background-color: white;
+	color: black;
+}
+
+header h2 {
+	font-size: 2vh;
+	color: white;
+}
+
+header h2::selection {
+	background-color: white;
+	color: black;
+}
+
 .menu {
 	margin-right: 15vh;
 	width: 40%;
